@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d18">
+    <title>Lawrence Arrow Rush</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="stript.js" defer></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Lawrence Arrow Rush home">
+          <span class="brand-icon" aria-hidden="true">➤</span>
+          <span>ARROW<span class="brand-light">RUSH</span></span>
+        </a>
+        <span class="game-label"><span class="status-dot"></span> ARCADE MODE</span>
+      </header>
+
+      <section class="game-layout" aria-label="Lawrence Arrow Rush game">
+        <div class="game-heading">
+          <div>
+            <p class="eyebrow">READY, AIM, SURVIVE</p>
+            <h1>Find your <span>flow.</span></h1>
+          </div>
+          <p class="heading-note">A little focus. A lot of dodging.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="scorebar" aria-label="Game scores">
+            <div class="score-item">
+              <span class="score-label">SCORE</span>
+              <strong id="score">0000</strong>
+            </div>
+            <div class="score-item score-best">
+              <span class="score-label">BEST</span>
+              <strong id="best">0000</strong>
+            </div>
+            <button class="icon-button" id="pause-button" type="button" aria-label="Pause game" title="Pause (P)">
+              <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+
+          <div class="arena" id="arena">
+            <canvas id="game-canvas" aria-label="Game arena. Move with the arrow keys or WASD to collect stars and avoid hazards." role="img"></canvas>
+            <div class="game-overlay" id="game-overlay">
+              <div class="overlay-content">
+                <span class="overlay-icon" id="overlay-icon" aria-hidden="true">➤</span>
+                <p class="eyebrow" id="overlay-eyebrow">YOUR NEXT HIGH SCORE</p>
+                <h2 id="overlay-title">Ready to roll?</h2>
+                <p class="overlay-copy" id="overlay-copy">Collect the glowing stars. Keep clear of the red hazards.</p>
+                <button class="play-button" id="play-button" type="button">
+                  <span id="play-label">Start game</span><span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-footer">
+            <p class="control-hint"><span class="keycap">↑</span><span class="keycap">←</span><span class="keycap">↓</span><span class="keycap">→</span> <span>to move</span></p>
+            <p class="goal-hint"><span class="star-dot">✦</span> Collect <span class="hazard-dot"></span> Avoid</p>
+          </div>
+        </div>
+
+        <nav class="touch-controls" aria-label="Touch movement controls">
+          <button type="button" class="direction-button direction-up" data-direction="up" aria-label="Move up">↑</button>
+          <button type="button" class="direction-button direction-left" data-direction="left" aria-label="Move left">←</button>
+          <button type="button" class="direction-button direction-down" data-direction="down" aria-label="Move down">↓</button>
+          <button type="button" class="direction-button direction-right" data-direction="right" aria-label="Move right">→</button>
+        </nav>
+        <p class="mobile-hint">Use the buttons to steer your arrow</p>
+      </section>
+
+      <footer class="page-footer">
+        <span>ONE ARROW. ENDLESS FLOW.</span>
+        <span>MOVE WITH <kbd>WASD</kbd> OR <kbd>ARROW KEYS</kbd> <span class="footer-divider">·</span> PAUSE WITH <kbd>P</kbd></span>
+      </footer>
+    </main>
+  </body>
+</html>
